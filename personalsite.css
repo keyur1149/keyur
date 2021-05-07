@@ -304,58 +304,6 @@ flex-wrap: wrap;
     text-decoration: none;
     padding-left: 5px;
 }
-
-
-/* // ADVERTIRS // */
-
-.ADverties{
-    display: flex;
-    flex-direction: column;
-    background-color: #ff6161;
-}
-.ASTON{
-    display: flex;
-    justify-content: space-around;
-    border: 5px solid black;
-}
-.PARCOS{
-    display: flex;
-    justify-content: space-around;
-    border: 5px solid black;
-}
-.PARCOS img{
-    height: 163px;
-    width: 180px;
-}
-.sky{
-    display: flex;
-    justify-content: space-around;
-    border: 5px solid black;
-}
-.sky img{
-    height: 163px;
-    width: 380px;
-}
-.sky a{
-    text-decoration: none;
-    color: black ;
-    animation: pdf 2s infinite;
-}
-@keyframes pdf {
-    25%{
-        color: rgb(102, 3, 8);
-    }
-    50%{
-        color: rgb(1, 10, 133);
-    }
-    75%{
-        color: rgb(0, 255, 0);
-    }
-    100%{
-        color: red;
-    }
-    
-}
 /* // last // */
 footer {
     display: flex;
