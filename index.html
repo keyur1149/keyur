@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Navigation</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        @import url(personalsite.css);
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div  class="left">
+            <img src="logo.png" >
+        </div>
+        <div class="menu-right">
+            <span onClick="myFunction()">&#9776;</span>
+           <ul id="menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    
+   
+    </div>   
+   
+   <script>
+       function myFunction(){
+          var x = document.getElementById("menu"); 
+           if(x.style.display == "block")
+           {
+               x.style.display = "none";
+           }
+           else{
+               x.style.display = "block";
+           }
+       }
+   </script>
+    <main>
+        <section id="home" class="mainconatain">
+            <div class="conatain">
+                <h1 id="n">MR.KEYUR</h1>
+                <p class="code">coder<br>web developer</p>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="pic2">
+                <img id="pic2id" src="main.jpeg">
+            </div>
+            <div class="inabout">
+                <h2>About me</h2>
+                <p id="ab">Name:Jivani Keyur Hareshbhai</p><br>
+                <p>Mother Name:Krishnaben Hareshbhai Jiavni</p><br>
+                <p>Birth Date :- 29/10/2002</p><br>
+                <p>Address:101,Sky hills,vrundavan park,lilaper-kenal road,Morbi-363641</p><br>
+                <p class="ac">I am currently studing at <strong>DHARMANSINH DESAI UNIVERSITY</strong> as 1st year computer engineering
+                    student.</p>
+                </p>
+            </div>
+        </section>
+        <section class="skill" id="skills">
+            <div class="sik1">
+                <h3>Skills</h3>
+            </div>
+            <div class="sik2">
+            <div class="sik21">
+                <P>I learned five language which are <strong>C,C++,HTML,CSS and PHP</strong>.</P>
+                <p>I am CURRENTLY WORK WITH TEAM PROJECT AND ALSO doing WEB DESIGN.</P>
+                    <p> I completed my 10th and 12th with 99.17 PR and  99.30 PR respectively. </p>
+                    <p>I also got 94.5522855 PR in jee exam with 59196(CRL) & 9818(GEN-EWS) all india rank.</p>
+                    <p>I got 92.50 marks out of 120 in GUJCET exam with 98.14 PR in Gujarat.</p>
+
+            </div>
+            <div class="language">
+
+
+                <pre class="cl"><span>C</span>                           <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon>
+                </pre>
+
+
+                <pre class="html"><span>HTML</span>                     <ion-icon class="star" name="star"></ion-icon><ion-icon class="star"  name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon>
+                </pre>
+
+
+                <pre class="c2"><span>C++</span>                       <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon>
+                </pre>
+
+
+                <pre class="css"><span>CSS</span>                       <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon>
+                </pre>
+
+
+                <pre class="php"><span>PHP</span>                       <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon>
+                </pre>
+            </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="con">
+                <h4>Contact me</h4>
+            </div>
+            <div class="incon">
+                <p>free feel to contact me any time</p>
+            </div>
+            <div class="social">
+            <div class="i">
+                <ion-icon name="logo-github"></ion-icon>
+                <a href="https://github.com/keyur1149" title="keyur jivani on github">github</a>
+            </div>
+            <div class="i">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://www.instagram.com/mr.cool_1149/" title="keyur jivani on instragram">instragram</a>
+            </div>
+            <div class="i">
+            <ion-icon name="mail"></ion-icon>
+            <a href="mailto:keyurpatel1149@gmail.com" title="mail to keyur jivani">Mail</a>
+            </div>
+            <div class="i">
+            <ion-icon name="call"></ion-icon>
+            <a href="tel:+918141351199" title="call to keyur jivani">+91 8141351199</a>
+            </div>
+        
+            </div>
+        </section>
+    </main>
+    <div class="ADverties">
+        <div class="ASTON">
+            <img src="astonlogo.png">
+            <p>Aston Ceramic(parking tiles)<br>
+                Survey No. 294.P-1,
+                At - Jivapar,
+                Near Virat Nagar (Rangpar),
+                Morbi - Jetpar Road,
+                Morbi - 363 630
+                Gujarat - India.
+                <br>
+                Phone: +91 99 78 66 8080
+                <br>
+                Email Address: info@astonceramic.com</p>
+        </div>
+        <div class="PARCOS">
+            <img src="parcos.png">
+            <p>PARCOS Ceramic(parking tiles)<br>
+                Pipli Jetpar Road, At. Rangpar, Opp. Ramdoot Petroleum, Morbi, Gujarat 363642
+                <br>
+                Phone: +91 99 78 64 80 80 
+        </div>
+        <div class="sky">
+            <img src="sky.jpeg">
+            <p>SKY DEVELOPERS<br>
+                <br>
+                Phone: +91 99 25 62 31 21 
+                <p>site 1:-ravaper-kenal road <br> <a href="https://drive.google.com/file/d/1r3CagAKEX37n_zQb2PhGMfUqaqEmmo7M/view?usp=sharing" title="click to view map">SKY LIGHT</a></p>
+                <p>site 2:-ravaper-kenal road <br> <a href="https://drive.google.com/file/d/1rtPglQQrXsSQQ9qyiPW-853sZ8s0R7zH/view?usp=sharing" title="click to view map">SKY LAND-2</a></p>
+                <p>site 3:-panchasar nani kenal road<br><a href="https://drive.google.com/file/d/1rqwl5McIVOvvSJDnuv62QK6NiK0EziLL/view?usp=sharing" title="click to view map">SKY VIEW</a></p>
+        </div>
+    </div>
+    <footer>
+        <div>
+        <span>desined by Keyur Jivani</span>
+        <span>|&copy;copyright</span><span>|Term & Policy</span>
+        </div><br>
+        <p class="thank">Thank you for visiting</p>
+    </footer>
+    <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+/* // to all // */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    margin-top: 0px;
+    background: url(mr.jpeg) no-repeat center center/cover;
+}
+
+
+/* // navigation bar // */
+
+ .nav-bar{
+    background:rgb(0 184 255);
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    font-family: sans-serif;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.nav-bar img{
+    width: 250px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+.menu-right{
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 20px;
+    list-style: none;
+    font-weight: bolder;
+}
+li a{
+    text-decoration: none;
+    color:#990e00;
+}
+li:hover{
+    background-color:rgb(250, 172, 4) ;
+    text-decoration: underline;
+}
+li:hover a{
+    color: black;
+}
+.menu-right span{
+    margin: 25px 25px;
+    /* margin-right: 25px; */
+    /* margin-left: 622px ; */
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    align-self: center;
+}
+
+@media only screen and (max-width: 800px){
+    .menu-right span
+    {
+        display: block;
+        color:white;
+        /* width: 32px; */
+        /* margin-left: 2px; */
+        /* float: right;     */
+    }   
+    ul li {
+        display: block;
+        /* background-color: rgb(0, 143, 114); */
+    }
+    ul{
+        display: none;
+    }
+    .nav-bar{
+        max-height: fit-content;
+    }
+    .nav-bar img{
+        padding-bottom:24px ;
+    }
+}
+
+
+
+
+
+
+/* // first conatain // */
+
+.mainconatain {
+    /* background-color: yellowgreen; */
+    color: #6368ff;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 640px;
+    width: 100%;
+    /* animation: navi 5s infinite; */
+    background: url(mr.jpeg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 8px;
+    z-index: -1;
+}
+@keyframes navi {
+    0% {
+        background-color: rgb(0, 97, 84);
+    }
+
+    50% {
+        background-color: rgb(0, 143, 114);
+    }
+
+    100% {
+        background-color: rgb(0, 230, 172);
+    }
+}
+
+.conatain {
+    float: left;
+}
+.code{
+   font-size: 50px;
+}
+.web{
+    font-size: 50px;
+}
+#n{
+    font-size: 100px;
+}
+.pic1 {
+    float: right;
+    clear: both;
+}
+
+
+#pic1id {
+    border-radius: 260px;
+    height: 500px;
+    width: 500px;
+    animation: pic 2s 1;
+}
+@keyframes pic {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+} 
+
+/* // about me // */
+
+.about {
+    background-color: #116068;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+}
+
+.pic2 {
+    padding-left: 50px;
+    padding-top: 30px;
+    /* width: 56%; */
+}
+
+#pic2id {
+    border-radius: 72px;
+    height: 500px;
+    width: 500px;
+}
+
+.inabout {
+    overflow-y: hidden;
+    float: right;
+    line-height: 20px;
+    padding-right: 120px;
+    padding-left: 150px;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    padding: 31px;
+}
+
+.ac {
+    line-height: 30px;
+}
+
+/* // SKILLS  // */
+.skill {
+    background-color: #46f3e3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.sik1{
+  text-align: center;
+}
+.sik2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sik21 p{
+    font-size: 20px;
+    line-height: 38px;
+}
+.language {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.language span {
+    font-size: 25px;
+}
+
+.star {
+    font-size: 35px;
+    letter-spacing: 9px;
+}
+
+/* // contact me // */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #286e67;
+}
+.con{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.incon {
+    font-size: 42px;
+     text-align: center;
+}
+h3{
+    font-size: 50px;
+}
+.social{
+   display: flex;
+   flex-direction: column;
+align-items: stretch;
+align-content: center;
+flex-wrap: wrap;
+}
+
+.i{
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    color: tomato;
+    border: 5px solid #000000;
+    /* background-color: black; */
+    margin: 25px;
+}
+.i:hover{
+    background-color: black;
+    color: royalblue;
+}
+.i:hover a{
+    color: royalblue;
+}
+.i:hover p{
+    color: royalblue;
+}
+.social a{
+    color: tomato;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+
+/* // ADVERTIRS // */
+
+.ADverties{
+    display: flex;
+    flex-direction: column;
+    background-color: #ff6161;
+}
+.ASTON{
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+}
+.PARCOS{
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+}
+.PARCOS img{
+    height: 163px;
+    width: 180px;
+}
+.sky{
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid black;
+}
+.sky img{
+    height: 163px;
+    width: 380px;
+}
+.sky a{
+    text-decoration: none;
+    color: black ;
+    animation: pdf 2s infinite;
+}
+@keyframes pdf {
+    25%{
+        color: rgb(102, 3, 8);
+    }
+    50%{
+        color: rgb(1, 10, 133);
+    }
+    75%{
+        color: rgb(0, 255, 0);
+    }
+    100%{
+        color: red;
+    }
+    
+}
+/* // last // */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: rgb(254 152 92);
+}
+.thank{
+     font-size: 30px;
+}
+
+
+@media only screen and (max-width:1100px) {
+    #n{
+    font-size: 39px;
+    }
+    .code {
+      font-size: 29px;
+    }
+    .web{
+     font-size: 29px;
+    }
+    #pic1id{
+        width: 466px;
+        height: 466px;
+    }
+    .inabout{
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width:1000px) {
+    #pic2id{
+        height: 400px;
+        width: 400px;
+    }
+    .language span{
+        padding-left: 50px;
+    }
+}
+@media only screen and (max-width:900px) {
+    .nav-bar img{
+        width: 179px;
+    }
+    #pic2id{
+        height: 350px;
+        width: 350px;
+    }
+    .language span{
+        padding-left: 50px;
+    }
+    .inabout h2{
+        font-size: 40px;
+    }
+    ul li{
+         margin: 0px 10px;
+    }
+}
+ @media only screen and (max-width:800px) {
+     .nav-bar img{
+         width: 179px;
+     }
+     ul li{
+         margin: 10px;
+     }
+    .pic2{
+        padding:0;  
+    }
+    .inabout{
+        padding:0;
+         line-height: 25px;
+    }
+    .language pre{
+        margin: 0px;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:700px) {
+    .mainconatain{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .about{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .sik2{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:600px){
+    .sky{
+        flex-wrap: wrap;
+    }
+    .sky img{
+        height: 160px ;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .sik21{
+        width: fit-content;
+    }
+    #pic1id{
+        height:300px ;
+        width: 300px;
+    }
+    #pic2id{
+        height: 250px;
+        width: 250px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .language pre{
+        padding: 0px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .star{
+        font-size: 20px;
+    }
+    .nav-bar img{
+        height: 75px;
+        width: 100px;
+        margin-left: 7px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .language span{
+        padding-left: 0px;
+    }
+    .pic2{
+        padding: 0px;
+    }
+    .ASTON{
+        flex-wrap: wrap;
+    }
+    .PARCOS{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:300px) {
+    #pic1id{
+        width: 222px;
+        height:222px;
+
+    }
+    .language{
+        display: none;
+    }
+}
+@media only screen and (max-width:340px) {
+    footer div span{
+        display: block;
+    }
+}
